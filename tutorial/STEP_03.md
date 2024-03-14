@@ -65,6 +65,8 @@ Take a note how we are adding a `system` message and a `user` message. The `syst
 
 In [app.service.ts](../apps/ai-api/src/app/app.service.ts) call the completions API. You can use the [OpenAI API documentation](https://platform.openai.com/docs/api-reference/chat/) to help you.
 
+Then, look at the return object. Extract from the return object only the final message and return it.
+
 If you're stuck, you can find the finished code in the [completed repository](https://github.com/mandarini/ai-ng-docs).
 
 ---
