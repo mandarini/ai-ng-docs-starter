@@ -1,5 +1,17 @@
 # Angular AI Docs Workshop - ng-conf 2024
 
+## The workshop
+
+Clone this repo:
+
+```bash
+git@github.com:mandarini/ai-ng-docs-starter.git
+```
+
+Read the `info` section below, it contains useful links, and what you need to get started.
+
+Then, go to the [Tutorial](tutorial/STEP_00.md) page to start the workshop!
+
 ## Info
 
 ### Tools used
@@ -28,16 +40,6 @@ You need **API keys** for OpenAI and Supabase. So, you need to fill in the follo
 ### Full final version of the code
 
 You can find a complete version of the code in this repo: https://github.com/mandarini/ai-ng-docs
-
-## NOW LET'S BEGIN
-
-First of all, clone this repo:
-
-```bash
-git@github.com:mandarini/ai-ng-docs-starter.git
-```
-
-Then, go to the [TUTORIAL](tutorial/TUTORIAL.md) page to start the workshop!
 
 ## Useful links
 
