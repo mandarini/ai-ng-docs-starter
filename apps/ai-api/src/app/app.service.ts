@@ -24,15 +24,11 @@ export class AppService {
     const { chatMessages } = createChatMessages([], query, contextText);
 
     const response: OpenAI.Chat.Completions.ChatCompletion =
-      await openai.chat.completions.create({
-        model: 'gpt-3.5-turbo-16k',
-        messages:
-          chatMessages as OpenAI.Chat.Completions.ChatCompletionMessageParam[],
-        temperature: 0,
-        stream: false,
-      });
+     // Call the completions API here
+     // https://platform.openai.com/docs/api-reference/chat/create
 
-    const responseText = response?.choices?.[0]?.message?.content;
+    // And extract the response text, so that we can return it to our client
+    // const responseText = 
 
     return responseText;
   }
