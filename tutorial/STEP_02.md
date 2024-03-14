@@ -4,6 +4,8 @@
 
 # Chapter 3: Understanding the embeddings code
 
+_Most of this code is taken from the [Supabase Vector search with Next.js and OpenAI](https://github.com/supabase-community/nextjs-openai-doc-search/blob/main/lib/generate-embeddings.ts) code example._
+
 Let's take a look at the code that generates the embeddings for our documents: [tools/embeddings/src/lib/embeddings.ts](../tools/embeddings/src/lib/embeddings.ts).
 
 What this code does is the following:
