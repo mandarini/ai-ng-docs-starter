@@ -1,4 +1,6 @@
 // Adjusted from: https://github.com/nrwl/nx/blob/master/tools/documentation/create-embeddings/src/main.mts
+// Based on: https://github.com/supabase-community/nextjs-openai-doc-search/blob/main/lib/generate-embeddings.ts
+
 import { createClient } from '@supabase/supabase-js';
 import { readFile } from 'fs/promises';
 import 'openai';
@@ -46,7 +48,7 @@ export function splitTreeBy(tree: any, predicate: (node: any) => boolean) {
  * Processes MD content for search indexing.
  * It extracts metadata and splits it into sub-sections based on criteria.
  */
-export function processMdxForSearch(content: string): ProcessedMd {
+export function processMdForSearch(content: string): ProcessedMd {
   const checksum = createHash('sha256').update(content).digest('base64');
 
   const mdTree = fromMarkdown(content, {});
@@ -110,7 +112,7 @@ class MarkdownEmbeddingSource extends BaseEmbeddingSource {
     const contents =
       this.fileContent ?? (await readFile(this.filePath, 'utf8'));
 
-    const { checksum, sections } = processMdxForSearch(contents);
+    const { checksum, sections } = processMdForSearch(contents);
 
     this.checksum = checksum;
     this.sections = sections;
@@ -258,9 +260,7 @@ export async function generateEmbeddings() {
               page_id: page.id,
               slug,
               heading,
-
               content,
-
               token_count: embeddingResponse.usage.total_tokens,
               embedding: responseData.embedding,
             })
