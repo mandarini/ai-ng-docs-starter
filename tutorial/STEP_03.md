@@ -51,6 +51,8 @@ This PostgreSQL function is a key component of our AI-enhanced search system. It
 
 This function is crucial for delivering a smart search experience that goes beyond simple keyword matching, allowing users to find the most relevant documentation sections based on the semantic meaning of their queries.
 
+You can read more about this in the [ChatGPT plugins now support Postgres & Supabase](https://supabase.com/blog/chatgpt-plugins-support-postgres) Supabase blog post.
+
 #### Calling the function
 
 Now that we have our `match_page_sections` function, and we know how it works, we can call it from our Nest.js application. You can take a look at the Supabase documentation on how to [call a Postgres function](https://supabase.com/docs/reference/javascript/rpc). Find the `searchDocumentation` function in [chat-functions.ts](../apps/ai-api/src/app/utils/chat-functions.ts) file and implement the call to the `match_page_sections` function.
