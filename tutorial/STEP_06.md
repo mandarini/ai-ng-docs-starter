@@ -14,7 +14,7 @@ You can follow Nx on Twitter: [https://twitter.com/nxdevtools](https://twitter.c
 
 And here's a picture of tired Malone, after completing this workshop:
 
-![Tired Malone](./assets/tired_malone.png)
+![Tired Malone](./assets/malone_tired.png)
 
 ---
 
