@@ -1,4 +1,4 @@
-[previous step](STEP_04.md)
+[previous step](STEP_04.md) | [next step](STEP_06.md)
 
 ---
 
@@ -33,4 +33,4 @@ While what we've built is powerful, there's always room for improvement and expa
 
 ---
 
-[previous step](STEP_04.md)
+[previous step](STEP_04.md) | [next step](STEP_06.md)
